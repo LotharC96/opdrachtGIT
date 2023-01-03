@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let tijdschrift = prompt("Welk tijdschrift wilt u kopen?");
+        let kostprijs = prompt("Wat is de kostprijs van 1 exemplaar?");
+        let aantal = prompt("Hoeveel tijdschriften wilt u kopen?");
+        let totaal = parseFloat(kostprijs) * parseFloat(aantal);
+        document.write(`<p> Het tijdschrift is: ${tijdschrift},het type hiervan is string.</p>
+                <p> De kostprijs van 1 exemplaar is ${kostprijs},het type hiervan is string.</p>
+                <p> Het aantal exemplaren dat je wilt kopen is: ${aantal},het type hiervan is string.</p>
+                <p> De totale prijs is dan: ${totaal}.`);
+
+
+                    console.log(typeof tijdschrift);
+                    console.log(typeof kostprijs);
+                    console.log(typeof aantal);
+                    console.log(typeof totaal);
+    </script>
+</body>
+</html>

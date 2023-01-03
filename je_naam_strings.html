@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let voornaam ="Java";
+let achternaam= "Script";
+let naam= `${voornaam} ${achternaam}`;
+document.write(`<p>Hallo ${naam} </p>`);
+
+let naamvariabele="JavaScript";
+let lengte= naamvariabele.length;
+document.write(`<p>Jouw naam bevat ${lengte} karakters.</p>` );
+
+let filename= "'JavaScriptFrameWork'";
+document.write(`<p> De originele filename is: ${filename}</p>`);
+
+let kleineletters=filename.toLowerCase();
+document.write(`<p> De filename kan beter in kleine letters getypt worden, dus: ${kleineletters}</p>`);
+
+document.write(`<p> Als je ${kleineletters} opsplitst, krijg je:'${kleineletters.substring(0,11)}' en '${kleineletters.substring(11,20)}'. </p>`);
+
+document.write(`<p> Het zesde karakter (volgens mensen)  in ${kleineletters} is: '${kleineletters.charAt(6)}'  </p>`);
+
+let email="jan.klaassen@mail.com";
+let locatie= email.indexOf("@");
+document.write(`<p>In 'jan.klaassen@mail.com' staat de @ op positie: ${locatie}  </p>`);
+
+let emailnaam= email.slice(0,email.indexOf("@"));
+document.write(`<p>De naam is dus: '${emailnaam}'  </p>`);
+
+let tekst="'Deze tekst is te lang en zal worden afgekapt op 8 tekens m.b.v. substr()'";
+document.write(`<p>De originele tekst: ${tekst} wordt dan: ${tekst.substring(0,9)}' </p>`);
+    </script>
+
+
+</body>
+</html>
